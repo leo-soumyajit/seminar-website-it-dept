@@ -21,8 +21,8 @@ const Index = () => {
     setLanguage(lang);
   };
 
-  const speakerImages = ["sangramsir.jpeg", "sankasir.jpeg", "public/tanusham.jpeg", "public/debasisgiri.jpeg", 
-    "public/arupsir.jpg", "public/koushiksir.jpeg" , "public/dakshsinasir.jpg", "public/anupsir.jpeg"];
+  const speakerImages = ["sangramsir.jpeg", "sankasir.jpeg", "tanusham.jpeg", "debasisgiri.jpeg", 
+    "arupsir.jpg", "koushiksir.jpeg" , "dakshsinasir.jpg", "anupsir.jpeg"];
 
   return (
     <div className="min-h-screen bg-background">
