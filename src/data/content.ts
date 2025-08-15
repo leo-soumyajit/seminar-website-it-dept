@@ -43,6 +43,28 @@ export const content = {
         }
       ]
     },
+     organizingCommittee: {
+      title: "Organizing Committee",
+      list: [
+        "Dr. Sk Sahnawaj",
+        "Dr. Bidyut Das",
+        "Mr. Manasija Bhattacharya",
+        "Dr. Ramkrishna Ghosh",
+        "Dr. Banani Ghose",
+        "Ms. Tamosa Chakraborty",
+        "Mr. Santanu Das",
+        "Mr. Pijush Bairi",
+        "Mr. Sankar Karmaker",
+        "Ms. Debolina Ghosh",
+        "Ms. Anusree Pramanik",
+        "Mr. Amit Sur",
+        "Mr. Anupam Chowdhury",
+        "Ms. Ahana Guchait",
+        "Ms. Rinku Rani Bhunia",
+        "Mr. Ayan Mukherji",
+        "Mr. Md. Wasim Bari"
+      ]
+    },
     
     speakers: {
       title: "Our Speakers",
@@ -159,6 +181,28 @@ export const content = {
           name: "ডঃ অঞ্জন মিশ্র",
           designation: "সম্মানিত রেজিস্ট্রার জেনারেল, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
         }
+      ]
+    },
+    organizingCommittee: {
+      title: "আয়োজক কমিটি",
+      list: [
+        "ডঃ শেখ শাওনওয়াজ",
+        "ডঃ বিদ্যুত দাস",
+        "শ্রী মনসিজা ভট্টাচার্য",
+        "ডঃ রামকৃষ্ণ ঘোষ",
+        "ডঃ বানানী ঘোষ",
+        "শ্রীমতি তমসা চক্রবর্তী",
+        "শ্রী সান্তনু দাস",
+        "শ্রী পীযুষ বাইরি",
+        "শ্রী শঙ্কর কর্মকার",
+        "শ্রীমতি দেবোলিনা ঘোষ",
+        "শ্রীমতি অনুশ্রী প্রামাণিক",
+        "শ্রী অমিত সুর",
+        "শ্রী অনুপম চৌধুরী",
+        "শ্রীমতি অহনা গুচাইত",
+        "শ্রীমতি রিঙ্কু রানি ভুনিয়া",
+        "শ্রী অয়ন মুখার্জী",
+        "শ্রী মোঃ ওয়াসিম বারি"
       ]
     },
     

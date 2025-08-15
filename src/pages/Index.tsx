@@ -228,6 +228,36 @@ const Index = () => {
               </div>
             </div>
           </ScrollReveal>
+          {/* Organizing Committee */}
+<ScrollReveal delay={500}>
+  <div className="mt-16">
+    <h3 className="text-3xl font-bold text-center mb-12 text-gradient">
+      {currentContent.organizingCommittee.title}
+    </h3>
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {currentContent.organizingCommittee.list.map((member, index) => (
+        <ScrollReveal
+          key={index}
+          direction={index % 2 === 0 ? "left" : "right"}
+          delay={600 + index * 50}
+        >
+          <Card className="gradient-card shadow-card hover-lift transition-smooth group">
+            <CardContent className="p-6 text-center relative overflow-hidden">
+              <div className="relative z-10">
+                <User className="w-10 h-10 text-accent mx-auto mb-3 animate-float" />
+                <h4 className="font-bold text-lg">
+                  {member}
+                </h4>
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-14 h-14 bg-accent/5 rounded-full transition-transform group-hover:scale-150"></div>
+            </CardContent>
+          </Card>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</ScrollReveal>
+
         </div>
       </section>
 
