@@ -445,51 +445,56 @@ const Index = () => {
       </section>
 
       {/* Purpose & Outcomes */}
-      <section className="py-16 gradient-section">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <ScrollReveal direction="left">
-              <Card className="gradient-card shadow-card">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">
-                    {currentContent.purpose.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed">{currentContent.purpose.description}</p>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+<section className="py-16 gradient-section">
+  <div className="container mx-auto px-4">
+    <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <ScrollReveal direction="left">
+        <Card className="gradient-card shadow-card">
+          <CardContent className="p-6">
+            <h3 className="text-2xl font-bold mb-6 text-primary">
+              {currentContent.purpose.title}
+            </h3>
+            <p className="text-sm leading-relaxed text-justify">
+              {currentContent.purpose.description}
+            </p>
+          </CardContent>
+        </Card>
+      </ScrollReveal>
 
-            <ScrollReveal direction="right">
-              <Card className="gradient-card shadow-card">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">
-                    {currentContent.outcomes.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed">{currentContent.outcomes.description}</p>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      <ScrollReveal direction="right">
+        <Card className="gradient-card shadow-card">
+          <CardContent className="p-6">
+            <h3 className="text-2xl font-bold mb-6 text-primary">
+              {currentContent.outcomes.title}
+            </h3>
+            <p className="text-sm leading-relaxed text-justify">
+              {currentContent.outcomes.description}
+            </p>
+          </CardContent>
+        </Card>
+      </ScrollReveal>
+    </div>
+  </div>
+</section>
 
-      {/* Institution Description */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <Card className="max-w-4xl mx-auto gradient-card shadow-card">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6 text-primary text-center">
-                  {currentContent.institutionDescription.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-center">
-                  {currentContent.institutionDescription.description}
-                </p>
-              </CardContent>
-            </Card>
-          </ScrollReveal>
-        </div>
-      </section>
+{/* Institution Description */}
+<section className="py-16 bg-background">
+  <div className="container mx-auto px-4">
+    <ScrollReveal>
+      <Card className="max-w-4xl mx-auto gradient-card shadow-card">
+        <CardContent className="p-8">
+          <h3 className="text-2xl font-bold mb-6 text-primary text-center">
+            {currentContent.institutionDescription.title}
+          </h3>
+          <p className="text-sm leading-relaxed text-justify">
+            {currentContent.institutionDescription.description}
+          </p>
+        </CardContent>
+      </Card>
+    </ScrollReveal>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-12 md:py-20 bg-background">
