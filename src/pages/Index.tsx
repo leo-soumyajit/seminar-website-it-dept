@@ -20,6 +20,36 @@ const Index = () => {
   const handleLanguageChange = (lang: 'en' | 'bn') => {
     setLanguage(lang);
   };
+  const highlightSpeakerNames = (text: string) => {
+    const speakerNames = [
+      // English names
+      'Dr. Sangram Ray',
+      'Prof. Sankhayan Choudhury', 
+      'Dr. Tanushyam Chattopadhyay',
+      'Dr. Debasish Giri',
+      'Dr. Arup Kumar Pal',
+      'Mr. Kousik Maiti',
+      'Dr. Dakshina Ranjan Kisku',
+      'Mr. Anup Mondal',
+      // Bengali names
+      'ডঃ সংগ্রাম রায়',
+      'প্রফেসর সংখায়ন চৌধুরী',
+      'ডঃ তনুশ্যাম চট্টোপাধ্যায়',
+      'ডঃ দেবাশিস গিরি',
+      'ডঃ অরূপ কুমার পাল',
+      'শ্রী কৌশিক মাইতি',
+      'ডঃ দক্ষিণা রঞ্জন কিস্কু',
+      'শ্রী অনুপ মণ্ডল'
+    ];
+
+    let highlightedText = text;
+    speakerNames.forEach(name => {
+      const regex = new RegExp(`(${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+      highlightedText = highlightedText.replace(regex, '<mark class="bg-primary/20 text-primary font-bold px-1 rounded">$1</mark>');
+    });
+
+    return highlightedText;
+  };
 
   const speakerImages = ["sangramsir.jpeg", "sankasir.jpeg", "tanusham.jpeg", "debasisgiri.jpeg", 
     "arupsir.jpg", "koushiksir.jpeg" , "dakshsinasir.jpg", "anupsir.jpeg"];
@@ -80,7 +110,7 @@ const Index = () => {
                 <div className="flex space-x-4">
                   <Button
                     className="bg-white text-primary hover:bg-white/90 transition-smooth shadow-elegant animate-glow"
-                    onClick={() => window.open('https://ataicademy.aicte.gov.in/signup', '_blank')}
+                    onClick={() => window.open('https://atalacademy.aicte.gov.in/signup', '_blank')}
                   >
                     {language === 'en' ? 'Register Now' : 'এখনই নিবন্ধন করুন'}
                   </Button>
@@ -128,138 +158,146 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Organizers Section */}
-      <section id="organizers" className="min-h-screen py-20 gradient-section">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <h2 className={`text-4xl md:text-5xl font-bold text-gradient mb-4 ${language === 'bn' ? 'font-bengali' : 'font-playfair'}`}>
-                {language === 'en' ? 'Organizers & Leadership' : 'আয়োজক ও নেতৃত্ব'}
-              </h2>
-              <p className={`text-muted-foreground text-lg max-w-2xl mx-auto ${language === 'bn' ? 'font-bengali font-medium' : 'font-inter'}`}>
-                {language === 'en' 
-                  ? 'Meet the distinguished leaders and organizers behind this prestigious seminar'
-                  : 'এই মর্যাদাপূর্ণ সেমিনারের পিছনে বিশিষ্ট নেতৃবৃন্দ ও আয়োজকদের সাথে পরিচিত হন'
-                }
+{/* Organizers Section */}
+<section id="organizers" className="min-h-screen py-20 gradient-section">
+  <div className="container mx-auto px-4">
+    <ScrollReveal>
+      <div className="text-center mb-16">
+        <h2 className={`text-4xl md:text-5xl font-bold text-gradient mb-4 ${language === 'bn' ? 'font-bengali' : 'font-playfair'}`}>
+          {language === 'en' ? 'Organizers & Leadership' : 'আয়োজক ও নেতৃত্ব'}
+        </h2>
+        <p className={`text-muted-foreground text-lg max-w-2xl mx-auto ${language === 'bn' ? 'font-bengali font-medium' : 'font-inter'}`}>
+          {language === 'en' 
+            ? 'Meet the distinguished leaders and organizers behind this prestigious seminar'
+            : 'এই মর্যাদাপূর্ণ সেমিনারের পিছনে বিশিষ্ট নেতৃবৃন্দ ও আয়োজকদের সাথে পরিচিত হন'
+          }
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <div className="max-w-6xl mx-auto">
+
+      {/* Chief Patron single card */}
+      <ScrollReveal direction="left" delay={100}>
+        <Card className="gradient-card shadow-card hover-lift transition-smooth group mb-16 max-w-lg mx-auto">
+          <CardContent className="p-8 text-center relative overflow-hidden">
+            <div className="relative z-10">
+              <Award className="w-16 h-16 text-primary mx-auto mb-6 animate-float" />
+              <h3 className="text-xl font-bold text-primary mb-3 font-space">
+                {currentContent.chiefPatron.title}
+              </h3>
+              <h4 className="font-bold mb-3 text-lg font-inter">{currentContent.chiefPatron.name}</h4>
+              <p className="text-muted-foreground font-inter">
+                {currentContent.chiefPatron.designation}
               </p>
             </div>
+            <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
+          </CardContent>
+        </Card>
+      </ScrollReveal>
+
+      {/* Patrons heading */}
+      <ScrollReveal delay={200}>
+        <h3 className="text-3xl font-bold text-center mb-12 text-gradient">
+          {currentContent.patrons.title}
+        </h3>
+      </ScrollReveal>
+
+      {/* Patrons grid 2 columns */}
+      <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        {currentContent.patrons.list.map((patron, index) => (
+          <ScrollReveal key={index} direction={index % 2 === 0 ? 'left' : 'right'} delay={300 + index * 100}>
+            <Card className="gradient-card shadow-card hover-lift transition-smooth group">
+              <CardContent className="p-6 relative overflow-hidden text-center">
+                <div className="relative z-10">
+                  <Star className="w-8 h-8 text-primary mb-3 mx-auto" />
+                  <h4 className="font-bold mb-2 text-lg">{patron.name}</h4>
+                  <p className="text-muted-foreground">{patron.designation}</p>
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/5 rounded-full transition-transform group-hover:scale-150"></div>
+              </CardContent>
+            </Card>
           </ScrollReveal>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Chief Patron */}
-            <ScrollReveal direction="left" delay={100}>
-              <Card className="gradient-card shadow-card hover-lift transition-smooth group">
-                <CardContent className="p-8 text-center relative overflow-hidden">
-                  <div className="relative z-10">
-                    <Award className="w-16 h-16 text-primary mx-auto mb-6 animate-float" />
-                    <h3 className="text-xl font-bold text-primary mb-3 font-space">
-                      {currentContent.chiefPatron.title}
-                    </h3>
-                    <h4 className="font-bold mb-3 text-lg font-inter">{currentContent.chiefPatron.name}</h4>
-                    <p className="text-muted-foreground font-inter">
-                      {currentContent.chiefPatron.designation}
-                    </p>
-                  </div>
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+        ))}
+      </div>
 
-            {/* Coordinator */}
-            <ScrollReveal direction="up" delay={200}>
-              <Card className="gradient-card shadow-card hover-lift transition-smooth group">
-                <CardContent className="p-8 text-center relative overflow-hidden">
-                  <div className="relative z-10">
-                    <User className="w-16 h-16 text-accent mx-auto mb-6 animate-float" style={{ animationDelay: '0.5s' }} />
-                    <h3 className="text-xl font-bold text-accent mb-3">
-                      {currentContent.coordinator.title}
-                    </h3>
-                    <h4 className="font-bold mb-3 text-lg">{currentContent.coordinator.name}</h4>
-                    <p className="text-muted-foreground">
-                      {currentContent.coordinator.designation}
-                    </p>
-                  </div>
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-accent/10 rounded-full -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+      {/* Coordinator & Co-Coordinator side by side */}
+<div className="flex flex-wrap justify-center gap-8 mb-16">
+  <ScrollReveal direction="up" delay={400}>
+    <Card className="gradient-card shadow-card hover-lift transition-smooth group max-w-lg">
+      <CardContent className="p-8 text-center relative overflow-hidden">
+        <div className="relative z-10">
+          <User 
+            className="w-16 h-16 text-accent mx-auto mb-6 animate-float" 
+            style={{ animationDelay: '0.5s' }} 
+          />
+          <h3 className="text-xl font-bold text-accent mb-3">
+            {currentContent.coordinator.title}
+          </h3>
+          <h4 className="font-bold mb-3 text-lg">{currentContent.coordinator.name}</h4>
+          <p className="text-muted-foreground">{currentContent.coordinator.designation}</p>
+        </div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-accent/10 rounded-full 
+                        -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
+      </CardContent>
+    </Card>
+  </ScrollReveal>
 
-            {/* Co-Coordinator */}
-            <ScrollReveal direction="right" delay={300}>
-              <Card className="gradient-card shadow-card hover-lift transition-smooth group">
-                <CardContent className="p-8 text-center relative overflow-hidden">
-                  <div className="relative z-10">
-                    <User className="w-16 h-16 text-accent mx-auto mb-6 animate-float" style={{ animationDelay: '1s' }} />
-                    <h3 className="text-xl font-bold text-accent mb-3">
-                      {currentContent.coCoordinator.title}
-                    </h3>
-                    <h4 className="font-bold mb-3 text-lg">{currentContent.coCoordinator.name}</h4>
-                    <p className="text-muted-foreground">
-                      {currentContent.coCoordinator.designation}
-                    </p>
-                  </div>
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-accent/10 rounded-full -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+  <ScrollReveal direction="right" delay={500}>
+    <Card className="gradient-card shadow-card hover-lift transition-smooth group max-w-lg">
+      <CardContent className="p-8 text-center relative overflow-hidden">
+        <div className="relative z-10">
+          <User 
+            className="w-16 h-16 text-accent mx-auto mb-6 animate-float" 
+            style={{ animationDelay: '1s' }} 
+          />
+          <h3 className="text-xl font-bold text-accent mb-3">
+            {currentContent.coCoordinator.title}
+          </h3>
+          <h4 className="font-bold mb-3 text-lg">{currentContent.coCoordinator.name}</h4>
+          <p className="text-muted-foreground">{currentContent.coCoordinator.designation}</p>
+        </div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-accent/10 rounded-full 
+                        -translate-y-10 translate-x-10 transition-transform group-hover:scale-150"></div>
+      </CardContent>
+    </Card>
+  </ScrollReveal>
+</div>
+
+
+      {/* Organizing Committee unchanged */}
+      <ScrollReveal delay={600}>
+        <div className="mt-16">
+          <h3 className="text-3xl font-bold text-center mb-12 text-gradient">
+            {currentContent.organizingCommittee.title}
+          </h3>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {currentContent.organizingCommittee.list.map((member, index) => (
+              <ScrollReveal
+                key={index}
+                direction={index % 2 === 0 ? "left" : "right"}
+                delay={700 + index * 50}
+              >
+                <Card className="gradient-card shadow-card hover-lift transition-smooth group">
+                  <CardContent className="p-6 text-center relative overflow-hidden">
+                    <div className="relative z-10">
+                      <User className="w-10 h-10 text-accent mx-auto mb-3 animate-float" />
+                      <h4 className="font-bold text-lg">{member}</h4>
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-14 h-14 bg-accent/5 rounded-full transition-transform group-hover:scale-150"></div>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+            ))}
           </div>
+        </div>
+      </ScrollReveal>
 
-          {/* Patrons */}
-          <ScrollReveal delay={400}>
-            <div className="mt-16">
-              <h3 className="text-3xl font-bold text-center mb-12 text-gradient">
-                {currentContent.patrons.title}
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {currentContent.patrons.list.map((patron, index) => (
-                  <ScrollReveal key={index} direction={index % 2 === 0 ? 'left' : 'right'} delay={500 + index * 100}>
-                    <Card className="gradient-card shadow-card hover-lift transition-smooth group">
-                      <CardContent className="p-6 relative overflow-hidden">
-                        <div className="relative z-10">
-                          <Star className="w-8 h-8 text-primary mb-3" />
-                          <h4 className="font-bold mb-2 text-lg">{patron.name}</h4>
-                          <p className="text-muted-foreground">{patron.designation}</p>
-                        </div>
-                        <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/5 rounded-full transition-transform group-hover:scale-150"></div>
-                      </CardContent>
-                    </Card>
-                  </ScrollReveal>
-                ))}
-              </div>
-            </div>
-          </ScrollReveal>
-          {/* Organizing Committee */}
-<ScrollReveal delay={500}>
-  <div className="mt-16">
-    <h3 className="text-3xl font-bold text-center mb-12 text-gradient">
-      {currentContent.organizingCommittee.title}
-    </h3>
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      {currentContent.organizingCommittee.list.map((member, index) => (
-        <ScrollReveal
-          key={index}
-          direction={index % 2 === 0 ? "left" : "right"}
-          delay={600 + index * 50}
-        >
-          <Card className="gradient-card shadow-card hover-lift transition-smooth group">
-            <CardContent className="p-6 text-center relative overflow-hidden">
-              <div className="relative z-10">
-                <User className="w-10 h-10 text-accent mx-auto mb-3 animate-float" />
-                <h4 className="font-bold text-lg">
-                  {member}
-                </h4>
-              </div>
-              <div className="absolute -bottom-2 -right-2 w-14 h-14 bg-accent/5 rounded-full transition-transform group-hover:scale-150"></div>
-            </CardContent>
-          </Card>
-        </ScrollReveal>
-      ))}
     </div>
   </div>
-</ScrollReveal>
+</section>
 
-        </div>
-      </section>
+
 
       {/* Speakers Section */}
       <section id="speakers" className="min-h-screen py-20 bg-background">
@@ -272,7 +310,7 @@ const Index = () => {
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-inter">
                 {language === 'en' 
                   ? 'Distinguished experts sharing cutting-edge insights in cybersecurity and technology'
-                  : 'সাইবার নিরাপত্তা ও প্রযুক্তিতে অত্যাধুনিক অন্তর্দৃষ্টি ভাগ করে নিচ্ছেন বিশিষ্ট বিশেষজ্ঞরা'
+                  : 'সাইবার নিরাপত্তা ও প্রযুক্তিতে অন্তর্দৃষ্টি ভাগ করে নিচ্ছেন বিশিষ্ট বিশেষজ্ঞরা'
                 }
               </p>
             </div>
@@ -301,9 +339,6 @@ const Index = () => {
                       <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors font-space">
                         {speaker}
                       </h3>
-                      <p className="text-muted-foreground text-sm font-inter">
-                        {language === 'en' ? 'Technology Expert' : 'প্রযুক্তি বিশেষজ্ঞ'}
-                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -351,7 +386,7 @@ const Index = () => {
                             <Clock className="w-5 h-5 text-primary mr-3" />
                             <span className="font-bold text-sm bg-primary text-primary-foreground px-3 py-1 rounded-full">{session.time}</span>
                           </div>
-                          <h4 className="font-bold mb-2 text-lg">{session.topic}</h4>
+                          <h4 className="font-bold mb-2 text-lg" dangerouslySetInnerHTML={{ __html: highlightSpeakerNames(session.topic) }}></h4>
                           <p className="text-muted-foreground">{session.speaker}</p>
                         </div>
                       ))}
@@ -382,7 +417,7 @@ const Index = () => {
                             <Clock className="w-5 h-5 text-accent mr-3" />
                             <span className="font-bold text-sm bg-accent text-accent-foreground px-3 py-1 rounded-full">{session.time}</span>
                           </div>
-                          <h4 className="font-bold mb-2 text-lg">{session.topic}</h4>
+                          <h4 className="font-bold mb-2 text-lg" dangerouslySetInnerHTML={{ __html: highlightSpeakerNames(session.topic) }}></h4>
                           <p className="text-muted-foreground">{session.speaker}</p>
                         </div>
                       ))}
@@ -395,6 +430,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
 
       {/* Registration & Details */}
       <section className="py-16 bg-background">
@@ -706,7 +742,7 @@ const Index = () => {
                   <Button
                     size="lg"
                     className="px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-semibold shadow-elegant hover-scale w-full sm:w-auto"
-                    onClick={() => window.open('https://ataicademy.aicte.gov.in/signup', '_blank')}
+                    onClick={() => window.open('https://atalacademy.aicte.gov.in/signup', '_blank')}
                   >
                     {language === 'en' ? 'Register Now' : 'এখনই নিবন্ধন করুন'}
                   </Button>

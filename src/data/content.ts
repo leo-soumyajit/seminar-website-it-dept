@@ -2,12 +2,12 @@ export const content = {
   en: {
     title: "Two Days Seminar On Empowering Innovation in Cyber Physical Systems and Cyber Security",
     subtitle: "(IN BENGALI)",
-    organizedBy: "Organized By Department of Information Technology, Haldia Institute of Technology",
+    organizedBy: "Organized By AICTE with Department of Information Technology, Haldia Institute of Technology",
     
     chiefPatron: {
       title: "Chief Patron",
-      name: "Dr. Lakshman Chandra Seth",
-      designation: "D. Litt, Honorable Chairman, ICARE and HIT Haldia, WB, India"
+      name: "Dr. Lakshman Chandra Seth D. Litt",
+      designation: "Honorable Chairman, ICARE and HIT Haldia, WB, India"
     },
     
     coordinator: {
@@ -18,7 +18,7 @@ export const content = {
     
     coCoordinator: {
       title: "Co-Coordinator",
-      name: "Mrs. Moumita Ghosh",
+      name: "Ms. Moumita Ghosh",
       designation: "Asst. Professor Department of Information Technology, HIT Haldia, WB, India"
     },
     
@@ -85,26 +85,36 @@ export const content = {
       day1: {
         title: "Day 1",
         sessions: [
-          { time: "10:00 AM - 11:00 AM", topic: "Dr. Sangram Ray - Challenges and Recent Solutions in Cyber Physical Systems", speaker: "Associate Professor of Computer Science and Engineering, NIT Sikkim" },
-          { time: "11:45 AM - 12:45 PM", topic: "Prof. Sankhayan Choudhury - Comprehend the Container Ecosystem", speaker: "Computer Science and Engineering, CU" },
-          { time: "2:15 PM - 3:15 PM", topic: "Dr. Tanushyam Chattopadhyay - Development of Cyber Physical Systems", speaker: "International Limited Live Address Via Zoom" },
-          { time: "4:00 PM - 5:30 PM", topic: "Dr. Debasish Giri - A Predictive Model for Mining Attack Detection using ML", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" }
-        ]
+  { time: "9:00 AM - 9:45 AM", topic: "Registration and High Tea", speaker: "" },
+  { time: "9:45 AM - 10:00 AM", topic: "Inauguration", speaker: "" },
+  { time: "10:00 AM - 11:00 AM", topic: "Challenges and Recent Solutions in Cyber Security By Dr. Sangram Ray", speaker: "Associate Professor of Computer Science and Engineering, NIT Sikkim" },
+  { time: "11:45 AM - 12:45 PM", topic: "Recommendation Challenge: Apprehend the Customer Perception by Prof. Sankhayan Choudhury", speaker: "Computer Science and Engineering, CU" },
+  { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
+  { time: "2:15 PM - 3:15 PM", topic: "Industrial Al: Industrial Deployment of Cyber Physical Systems By Dr. Tanushyam Chattopadhyay", speaker: "International Limited Live Address Via Zoom" },
+  { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Mining Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
+  { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea Break", speaker: "" }
+]
+
       },
       day2: {
         title: "Day 2",
         sessions: [
-          { time: "10:00 AM - 11:00 AM", topic: "Dr. Arup Kumar Pal - Secure Video Surveillance", speaker: "Associate Professor of Computer Science and Engineering, IIT (ISM) Dhanbad" },
-          { time: "11:45 AM - 12:45 PM", topic: "Mr. Kousik Maiti - Secure Intelligence and existing challenges", speaker: "Scientist Level Director at Centre for Development of Advanced Computing" },
-          { time: "2:15 PM - 3:15 PM", topic: "Dr. Dakshina Ranjan Kisku - Health Care in Cyber Physical Systems", speaker: "Associate Professor of Computer Science and Engineering, NIT Durgapur" },
-          { time: "4:00 PM - 5:30 PM", topic: "Mr. Anup Mondal - AI Driven Intrusion Detection Systems: CDG", speaker: "Software Developer at Version 1" }
-        ]
+  { time: "9:00 AM - 9:45 AM", topic: "Registration and High Tea", speaker: "" },
+  { time: "9:45 AM - 10:00 AM", topic: "Inauguration", speaker: "" },
+  { time: "10:00 AM - 11:00 AM", topic: "Secure Video Surveillance System By Dr. Arup Kumar Pal", speaker: "Associate Professor of Computer Science and Engineering, IIT (ISM) Dhanbad" },
+  { time: "11:45 AM - 12:45 PM", topic: "Threat Intelligence and Hunting Fundamentals By Mr. Kousik Maiti", speaker: "Scientist Level Director at Centre for Development of Advanced Computing" },
+  { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
+  { time: "2:15 PM - 3:15 PM", topic: "Health Care in Cyber Physical Systems By Dr. Dakshina Ranjan Kisku", speaker: "Associate Professor of Computer Science and Engineering, NIT Durgapur" },
+  { time: "4:00 PM - 5:30 PM", topic: "AI Driven Intrusion Detection Systems in CPS By Mr. Anup Mondal", speaker: "Software Developer at Version 1" },
+  { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea Break", speaker: "" }
+]
+
       }
     },
     
     seminarDetails: {
       title: "Seminar Details",
-      registrationLink: "Registration link: https://ataicademy.aicte.gov.in/signup",
+      registrationLink: "Registration link: https://atalacademy.aicte.gov.in/signup",
       registrationFree: "No Registration Free",
       deadline: "Registration Deadline: August 25, 2025",
       mode: "Seminar Mode: Offline",
@@ -142,12 +152,12 @@ export const content = {
   bn: {
     title: "দুই দিন ব্যাপী সেমিনার : এমপাওয়ারিং ইনোভেশন ইন সাইবার ফিজিক্যাল সিস্টেমস অ্যান্ড সাইবার সিকিউরিটি",
     subtitle: "(বাংলায়)",
-    organizedBy: "তথ্য প্রযুক্তি বিভাগ, হলদিয়া ইনস্টিটিউট অফ টেকনোলজি কর্তৃক আয়োজিত",
+    organizedBy: "হলদিয়া ইনস্টিটিউট অফ টেকনোলজির তথ্য প্রযুক্তি বিভাগের সাথে এআইসিটিসি দ্বারা আয়োজিত",
     
     chiefPatron: {
       title: "প্রধান পৃষ্ঠপোষক",
-      name: "ডঃ লক্ষণ চন্দ্র সেঠ",
-      designation: "ডি. লিট, সম্মানিত চেয়ারম্যান, ICARE এবং এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
+      name: "ডঃ লক্ষণ চন্দ্র শেঠ ডি. লিট",
+      designation: "সম্মানিত চেয়ারম্যান, আইকেয়ার এবং এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
     },
     
     coordinator: {
@@ -158,7 +168,7 @@ export const content = {
     
     coCoordinator: {
       title: "সহ-সমন্বয়কারী",
-      name: "শ্রীমতি মৌমিতা ঘোষ",
+      name: "মৌমিতা ঘোষ",
       designation: "সহকারী অধ্যাপক তথ্য প্রযুক্তি বিভাগ, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
     },
     
@@ -166,12 +176,12 @@ export const content = {
       title: "পৃষ্ঠপোষক",
       list: [
         {
-          name: "শ্রী সায়ন্তন সেঠ",
+          name: "শ্রী সায়ন্তন শেঠ",
           designation: "সম্মানিত ভাইস চেয়ারম্যান, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
         },
         {
           name: "শ্রী আশিস লাহিড়ী",
-          designation: "সম্মানিত সচিব, ICARE, পশ্চিমবঙ্গ, ভারত"
+          designation: "সম্মানিত সচিব, আইকেয়ার, পশ্চিমবঙ্গ, ভারত"
         },
         {
           name: "প্রফেসর (ডঃ) তরুণ কান্তি জানা",
@@ -184,25 +194,25 @@ export const content = {
       ]
     },
     organizingCommittee: {
-      title: "আয়োজক কমিটি",
+      title: "আয়োজক",
       list: [
         "ডঃ শেখ শাওনওয়াজ",
         "ডঃ বিদ্যুত দাস",
         "শ্রী মনসিজা ভট্টাচার্য",
         "ডঃ রামকৃষ্ণ ঘোষ",
         "ডঃ বানানী ঘোষ",
-        "শ্রীমতি তমসা চক্রবর্তী",
+        "তমসা চক্রবর্তী",
         "শ্রী সান্তনু দাস",
         "শ্রী পীযুষ বাইরি",
         "শ্রী শঙ্কর কর্মকার",
-        "শ্রীমতি দেবোলিনা ঘোষ",
-        "শ্রীমতি অনুশ্রী প্রামাণিক",
+        "দেবোলিনা ঘোষ",
+        "অনুশ্রী প্রামাণিক",
         "শ্রী অমিত সুর",
         "শ্রী অনুপম চৌধুরী",
-        "শ্রীমতি অহনা গুচাইত",
-        "শ্রীমতি রিঙ্কু রানি ভুনিয়া",
+        "অহনা গুছাইত",
+        "রিঙ্কু রানি ভুনিয়া",
         "শ্রী অয়ন মুখার্জী",
-        "শ্রী মোঃ ওয়াসিম বারি"
+        "মোঃ ওয়াসিম বারি"
       ]
     },
     
@@ -225,19 +235,27 @@ export const content = {
       day1: {
         title: "প্রথম দিন",
         sessions: [
-          { time: "সকাল ১০:০০ - ১১:০০", topic: "ডঃ সংগ্রাম রায় - চ্যালেঞ্জস অ্যান্ড রিসেন্ট সলিউশনস্ ইন সাইবার সিকিউরিটি", speaker: "কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং এর সহযোগী অধ্যাপক এবং বিভাগীয় প্রধান, এনআইটি সিকিম" },
-          { time: "সকাল ১১:৪৫ - দুপুর ১২:৪৫", topic: "প্রফেসর সংখায়ন চৌধুরী -  রেকমেন্ডেশন চ্যালেঞ্জ অ্যাপ্রিহেন্ড দ্য কাস্টমার পারসেপশন", speaker: "কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং বিভাগ, কলকাতা বিশ্ববিদ্যালয়" },
-          { time: "দুপুর ২:১৫ - ৩:১৫", topic: "ডঃ তনুশ্যাম চট্টোপাধ্যায় - ইন্ডাস্ট্রিয়াল এআই: ইন্ডাস্ট্রিয়াল ডিপ্লয়মেন্ট অফ সাইবার ফিজিক্যাল সিস্টেমস", speaker: "সিরিয়াস ডিজিটেক ইন্টারন্যাশনাল লিমিটেড (আদানি আইএইচসি যৌথ উদ্যোগ)" },
-          { time: "বিকাল ৪:০০ - ৫:৩০", topic: "ডঃ দেবাশিস গিরি - এ প্রেডিকশন মডেল ফর মিশিং অ্যাটাক ডিটেকশন ইউজিং এমএল", speaker: "ইনফরমেশন টেকনোলজি বিভাগ, মৌলানা আবুল কালাম আজাদ প্রযুক্তি বিশ্ববিদ্যালয়" }
+          { time: "সকাল ৯:০০ - ৯:৪৫", topic: "নিবন্ধন এবং হাই টি", speaker: "" },
+          { time: "সকাল ৯:৪৫ - ১০:০০", topic: "উদ্বোধনী", speaker: "" },
+          { time: "সকাল ১০:০০ - ১১:০০", topic: "চ্যালেঞ্জস অ্যান্ড রিসেন্ট সলিউশনস্ ইন সাইবার সিকিউরিটি - ডঃ সংগ্রাম রায়", speaker: "কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং এর সহযোগী অধ্যাপক এবং বিভাগীয় প্রধান, এনআইটি সিকিম" },
+          { time: "সকাল ১১:৪৫ - দুপুর ১২:৪৫", topic: "রেকমেন্ডেশন চ্যালেঞ্জ অ্যাপ্রিহেন্ড দ্য কাস্টমার পারসেপশন - প্রফেসর সংখায়ন চৌধুরী", speaker: "কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং বিভাগ, কলকাতা বিশ্ববিদ্যালয়" },
+          { time: "দুপুর ১:১৫ - ২:১৫", topic: "মধ্যাহ্ন বিরতি", speaker: "" },
+          { time: "দুপুর ২:১৫ - ৩:১৫", topic: "ইন্ডাস্ট্রিয়াল এআই: ইন্ডাস্ট্রিয়াল ডিপ্লয়মেন্ট অফ সাইবার ফিজিক্যাল সিস্টেমস - ডঃ তনুশ্যাম চট্টোপাধ্যায়", speaker: "সিরিয়াস ডিজিটেক ইন্টারন্যাশনাল লিমিটেড (আদানি আইএইচসি যৌথ উদ্যোগ)" },
+          { time: "বিকাল ৪:০০ - ৫:৩০", topic: "এ প্রেডিকশন মডেল ফর মিশিং অ্যাটাক ডিটেকশন ইউজিং এমএল - ডঃ দেবাশিস গিরি", speaker: "ইনফরমেশন টেকনোলজি বিভাগ, মৌলানা আবুল কালাম আজাদ প্রযুক্তি বিশ্ববিদ্যালয়" },
+          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "নাস্তা এবং চা বিরতি", speaker: "" }
         ]
       },
       day2: {
         title: "দ্বিতীয় দিন",
         sessions: [
-          { time: "সকাল ১০:০০ - ১১:০০", topic: "ডঃ অরূপ কুমার পাল - সিকিওর ভিডিও সারভেইল্যান্স সিস্টেম", speaker: "সহযোগী অধ্যাপক কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ, আইআইটি, ধানবাদ" },
-          { time: "সকাল ১১:৪৫ - দুপুর ১২:৪৫", topic: "শ্রী কৌশিক মাইতি - থ্রেট ইন্টেলিজেন্স অ্যান্ড হান্টিং ফান্ডামেন্টালস", speaker: "সেন্টার ফর ডেভেলপমেন্ট অফ অ্যাডভান্সড কম্পিউটিং (সি-ড্যাক), কলকাতা" },
-          { time: "দুপুর ২:১৫ - ৩:১৫", topic: "ডঃ দক্ষিণা রঞ্জন কিস্কু - হেলথ কেয়ার ইন সাইবার ফিজিক্যাল সিস্টেম", speaker: "সহযোগী অধ্যাপক কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ, এনআইটি দুর্গাপুর" },
-          { time: "বিকাল ৪:০০ - ৫:৩০", topic: "শ্রী অনুপ মণ্ডল - এআই ড্রিভেন ইন্ট্রুসন ডিটেকশন সিস্টেম ইন সিপিএস", speaker: "সিনিয়র ডেভেলপার ভার্সন ১" }
+          { time: "সকাল ৯:০০ - ৯:৪৫", topic: "নিবন্ধন এবং হাই টি", speaker: "" },
+          { time: "সকাল ৯:৪৫ - ১০:০০", topic: "উদ্বোধনী", speaker: "" },
+          { time: "সকাল ১০:০০ - ১১:০০", topic: "সিকিওর ভিডিও সারভেইল্যান্স সিস্টেম - ডঃ অরূপ কুমার পাল", speaker: "সহযোগী অধ্যাপক কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ, আইআইটি, ধানবাদ" },
+          { time: "সকাল ১১:৪৫ - দুপুর ১২:৪৫", topic: "থ্রেট ইন্টেলিজেন্স অ্যান্ড হান্টিং ফান্ডামেন্টালস - শ্রী কৌশিক মাইতি", speaker: "সেন্টার ফর ডেভেলপমেন্ট অফ অ্যাডভান্সড কম্পিউটিং (সি-ড্যাক), কলকাতা" },
+          { time: "দুপুর ১:১৫ - ২:১৫", topic: "মধ্যাহ্ন বিরতি", speaker: "" },
+          { time: "দুপুর ২:১৫ - ৩:১৫", topic: "হেলথ কেয়ার ইন সাইবার ফিজিক্যাল সিস্টেম - ডঃ দক্ষিণা রঞ্জন কিস্কু", speaker: "সহযোগী অধ্যাপক কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ, এনআইটি দুর্গাপুর" },
+          { time: "বিকাল ৪:০০ - ৫:৩০", topic: "এআই ড্রিভেন ইন্ট্রুসন ডিটেকশন সিস্টেম ইন সিপিএস - শ্রী অনুপ মণ্ডল", speaker: "সিনিয়র ডেভেলপার ভার্সন ১" },
+          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "নাস্তা এবং চা বিরতি", speaker: "" }
         ]
       }
     },
