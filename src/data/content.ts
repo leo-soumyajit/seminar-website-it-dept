@@ -92,13 +92,14 @@ export const content = {
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
   { time: "2:15 PM - 3:45 PM", topic: "Industrial Al: Industrial Deployment of Cyber Physical Systems By Dr. Tanushyam Chattopadhyay", speaker: "International Limited Live Address Via Zoom" },
   { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Mining Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
-  { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea Break", speaker: "" }
+  { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea", speaker: "" }
 ]
 
       },
       day2: {
         title: "Day 2",
         sessions: [
+  { time: "9:30 AM - 10:00 AM", topic: "High Tea", speaker: "" },    
   { time: "10:00 AM - 11:30 AM", topic: "Secure Video Surveillance System By Dr. Arup Kumar Pal", speaker: "Associate Professor of Computer Science and Engineering, IIT (ISM) Dhanbad" },
   { time: "11:45 AM - 1:15 PM", topic: "Threat Intelligence and Hunting Fundamentals By Mr. Kousik Maiti", speaker: "Scientist Level Director at Centre for Development of Advanced Computing" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
@@ -240,12 +241,13 @@ export const content = {
           { time: "দুপুর ১:১৫ - ২:১৫", topic: "মধ্যাহ্ন বিরতি", speaker: "" },
           { time: "দুপুর ২:১৫ - ৩:৪৫", topic: "ইন্ডাস্ট্রিয়াল এআই: ইন্ডাস্ট্রিয়াল ডিপ্লয়মেন্ট অফ সাইবার ফিজিক্যাল সিস্টেমস - ডঃ তনুশ্যাম চট্টোপাধ্যায়", speaker: "সিরিয়াস ডিজিটেক ইন্টারন্যাশনাল লিমিটেড (আদানি আইএইচসি যৌথ উদ্যোগ)" },
           { time: "বিকাল ৪:০০ - ৫:৩০", topic: "এ প্রেডিকশন মডেল ফর মিশিং অ্যাটাক ডিটেকশন ইউজিং এমএল - ডঃ দেবাশিস গিরি", speaker: "ইনফরমেশন টেকনোলজি বিভাগ, মৌলানা আবুল কালাম আজাদ প্রযুক্তি বিশ্ববিদ্যালয়" },
-          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "নাস্তা এবং চা বিরতি", speaker: "" }
+          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "নাস্তা এবং চা", speaker: "" }
         ]
       },
       day2: {
         title: "দ্বিতীয় দিন",
         sessions: [
+          { time: "সকাল ৯:৩০ - ১০:০০", topic: "হাই টি", speaker: "" },
           { time: "সকাল ১০:০০ - ১১:৩০", topic: "সিকিওর ভিডিও সারভেইল্যান্স সিস্টেম - ডঃ অরূপ কুমার পাল", speaker: "সহযোগী অধ্যাপক কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ, আইআইটি, ধানবাদ" },
           { time: "সকাল ১১:৪৫ - দুপুর ১:১৫", topic: "থ্রেট ইন্টেলিজেন্স অ্যান্ড হান্টিং ফান্ডামেন্টালস - শ্রী কৌশিক মাইতি", speaker: "সেন্টার ফর ডেভেলপমেন্ট অফ অ্যাডভান্সড কম্পিউটিং (সি-ড্যাক), কলকাতা" },
           { time: "দুপুর ১:১৫ - ২:১৫", topic: "মধ্যাহ্ন বিরতি", speaker: "" },
