@@ -85,7 +85,7 @@ export const content = {
       day1: {
         title: "Day 1",
         sessions: [
-  { time: "9:00 AM - 9:45 AM", topic: "Registration and High Tea", speaker: "" },
+  { time: "9:15 AM - 9:45 AM", topic: "Registration and Hi Tea", speaker: "" },
   { time: "9:45 AM - 10:00 AM", topic: "Inauguration", speaker: "" },
   { time: "10:00 AM - 11:30 AM", topic: "Challenges and Recent Solutions in Cyber Security By Dr. Sangram Ray", speaker: "Associate Professor of Computer Science and Engineering, NIT Sikkim" },
   { time: "11:45 AM - 1:15 PM", topic: "Recommendation Challenge: Apprehend the Customer Perception by Prof. Sankhayan Choudhury", speaker: "Computer Science and Engineering, CU" },
@@ -99,13 +99,13 @@ export const content = {
       day2: {
         title: "Day 2",
         sessions: [
-  { time: "9:30 AM - 10:00 AM", topic: "High Tea", speaker: "" },    
+  { time: "9:30 AM - 10:00 AM", topic: "Hi Tea", speaker: "" },    
   { time: "10:00 AM - 11:30 AM", topic: "Secure Video Surveillance System By Dr. Arup Kumar Pal", speaker: "Associate Professor of Computer Science and Engineering, IIT (ISM) Dhanbad" },
   { time: "11:45 AM - 1:15 PM", topic: "Threat Intelligence and Hunting Fundamentals By Mr. Kousik Maiti", speaker: "Scientist Level Director at Centre for Development of Advanced Computing" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
   { time: "2:15 PM - 3:45 PM", topic: "Health Care in Cyber Physical Systems By Dr. Dakshina Ranjan Kisku", speaker: "Associate Professor of Computer Science and Engineering, NIT Durgapur" },
   { time: "4:00 PM - 5:30 PM", topic: "AI Driven Intrusion Detection Systems in CPS By Mr. Anup Mondal", speaker: "Software Developer at Version 1" },
-  { time: "5:30 PM - 5:45 PM", topic: "Valedictory session and Snacks and Tea", speaker: "" }
+  { time: "5:30 PM - 5:45 PM", topic: "Valedictory session and Tea", speaker: "" }
 ]
 
       }
