@@ -91,7 +91,7 @@ export const content = {
   { time: "11:45 AM - 1:15 PM", topic: "Recommendation Challenge: Apprehend the Customer Perception by Prof. Dr. Sankhayan Choudhury", speaker: "Computer Science and Engineering, CU" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
   { time: "2:15 PM - 3:45 PM", topic: "Industrial Al: Industrial Deployment of Cyber Physical Systems By Mr. Aninda Sankar Sukla", speaker: "Senior Data Scientist Manager" },
-  { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Mishing Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
+  { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Smishing Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
   { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea", speaker: "" }
 ]
 
