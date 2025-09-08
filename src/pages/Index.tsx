@@ -448,7 +448,6 @@ const Index = () => {
                       <p className="text-sm font-medium">{currentContent.seminarDetails.registrationLink}</p>
                     </div>
                     <p className="text-green-600 font-medium">{currentContent.seminarDetails.registrationFree}</p>
-                    <p className="text-sm">{currentContent.seminarDetails.deadline}</p>
                     <p className="text-sm">{currentContent.seminarDetails.mode}</p>
                     <p className="text-sm">{currentContent.seminarDetails.language}</p>
                   </div>
