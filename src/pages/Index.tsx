@@ -51,8 +51,8 @@ const Index = () => {
     return highlightedText;
   };
 
-  const speakerImages = ["sangramsir.jpeg", "sankasir.jpeg", "tanusham.jpeg", "debasisgiri.jpeg", 
-    "arupsir.jpg", "koushiksir.jpeg" , "dakshsinasir.jpg", "anupsir.jpeg"];
+  const speakerImages = ["sangramsir.jpeg", "sankasir.jpeg", "anindasir.png", "debasisgiri.jpeg", 
+    "arupsir.jpg", "tapassir.png" , "dakshsinasir.jpg", "anupsir.jpeg"];
 
   return (
     <div className="min-h-screen bg-background">

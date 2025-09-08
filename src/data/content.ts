@@ -71,7 +71,7 @@ export const content = {
       list: [
         "Dr. Sangram Ray, NIT Sikkim",
         "Prof. Dr. Sankhayan Choudhury, CU",
-        "Mr. Aninda Sankar Sukla, Senior Data Scientist Manager",
+        "Mr. Aninda Sankar Sukla, Senior Data Scientist Manager at Sirius Digitech International Limited (an Adani IHC Joint Venture)",
         "Dr. Debasish Giri, MAKAUT",
         "Dr. Arup Kumar Pal, IIT (ISM) Dhanbad",
         "Mr. Tapas Bandyopadhyay, Technical Expert, NABL",
