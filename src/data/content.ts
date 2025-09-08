@@ -1,7 +1,7 @@
 export const content = {
   en: {
     title: "Two Days Seminar On Empowering Innovation in Cyber Physical Systems and Cyber Security",
-    subtitle: "(IN BENGALI)",
+    subtitle: "(IN BENGALI LANGUAGE)",
     organizedBy: "Organized By AICTE with Department of Information Technology, Haldia Institute of Technology",
     
     chiefPatron: {
@@ -86,7 +86,7 @@ export const content = {
         title: "Day 1",
         sessions: [
   { time: "9:15 AM - 9:45 AM", topic: "Registration and Tea", speaker: "" },
-  { time: "9:45 AM - 10:00 AM", topic: "Inauguration", speaker: "" },
+  { time: "9:45 AM - 10:00 AM", topic: "Inauguration Ceremony", speaker: "" },
   { time: "10:00 AM - 11:30 AM", topic: "Challenges and Recent Solutions in Cyber Security By Dr. Sangram Ray", speaker: "Associate Professor of Computer Science and Engineering, NIT Sikkim" },
   { time: "11:45 AM - 1:15 PM", topic: "Recommendation Challenge: Apprehend the Customer Perception by Prof. Dr. Sankhayan Choudhury", speaker: "Computer Science and Engineering, CU" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
@@ -114,7 +114,7 @@ export const content = {
     seminarDetails: {
       title: "Seminar Details",
       registrationLink: "Registration link: https://atalacademy.aicte.gov.in/signup",
-      registrationFree: "No Registration Free",
+      registrationFree: "No Registration Fee",
       deadline: "Registration Deadline: August 25, 2025",
       mode: "Seminar Mode: Offline",
       language: "Language of Communication: Bengali"
@@ -150,18 +150,18 @@ export const content = {
   
   bn: {
     title: "দুই দিন ব্যাপী সেমিনার : এমপাওয়ারিং ইনোভেশন ইন সাইবার ফিজিক্যাল সিস্টেমস অ্যান্ড সাইবার সিকিউরিটি",
-    subtitle: "(বাংলায়)",
+    subtitle: "(বাংলা ভাষায়)",
     organizedBy: "হলদিয়া ইনস্টিটিউট অফ টেকনোলজির তথ্য প্রযুক্তি বিভাগের সাথে এআইসিটিসি দ্বারা আয়োজিত",
     
     chiefPatron: {
       title: "প্রধান পৃষ্ঠপোষক",
-      name: "ডঃ লক্ষণ চন্দ্র শেঠ, ডি. লিট",
+      name: "ড. লক্ষণ চন্দ্র শেঠ, ডি. লিট",
       designation: "সম্মানিত চেয়ারম্যান, আইকেয়ার এবং এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
     },
     
     coordinator: {
       title: "সমন্বয়কারী",
-      name: "প্রফেসর (ডঃ) সৌমেন পাল",
+      name: "প্রফেসর (ড.) সৌমেন পাল",
       designation: "তথ্য প্রযুক্তি বিভাগের প্রধান, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
     },
     
@@ -183,11 +183,11 @@ export const content = {
           designation: "সম্মানিত সচিব, আইকেয়ার, পশ্চিমবঙ্গ, ভারত"
         },
         {
-          name: "প্রফেসর (ডঃ) তরুণ কান্তি জানা",
+          name: "প্রফেসর (ড.) তরুণ কান্তি জানা",
           designation: "সম্মানিত অধ্যক্ষ, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
         },
         {
-          name: "ডঃ অঞ্জন মিশ্র",
+          name: "ড. অঞ্জন মিশ্র",
           designation: "সম্মানিত রেজিস্ট্রার জেনারেল, এইচআইটি হলদিয়া, পশ্চিমবঙ্গ, ভারত"
         }
       ]
@@ -235,13 +235,13 @@ export const content = {
         title: "প্রথম দিন",
         sessions: [
           { time: "সকাল ৯:১৫ - ৯:৪৫", topic: "নিবন্ধন এবং টি", speaker: "" },
-          { time: "সকাল ৯:৪৫ - ১০:০০", topic: "উদ্বোধনী", speaker: "" },
+          { time: "সকাল ৯:৪৫ - ১০:০০", topic: "উদ্বোধনী অনুষ্ঠান", speaker: "" },
           { time: "সকাল ১০:০০ - ১১:৩০", topic: "চ্যালেঞ্জস অ্যান্ড রিসেন্ট সলিউশনস্ ইন সাইবার সিকিউরিটি - ড. সংগ্রাম রায়", speaker: "কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং এর সহযোগী অধ্যাপক এবং বিভাগীয় প্রধান, এনআইটি সিকিম" },
           { time: "সকাল ১১:৪৫ - দুপুর ১:১৫", topic: "রেকমেন্ডেশন চ্যালেঞ্জ অ্যাপ্রিহেন্ড দ্য কাস্টমার পারসেপশন - প্রফেসর (ড.‌) সাংখ্যায়ন চৌধুরী", speaker: "কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং বিভাগ, কলকাতা বিশ্ববিদ্যালয়" },
           { time: "দুপুর ১:১৫ - ২:১৫", topic: "মধ্যাহ্ন বিরতি", speaker: "" },
           { time: "দুপুর ২:১৫ - ৩:৪৫", topic: "ইন্ডাস্ট্রিয়াল এআই: ইন্ডাস্ট্রিয়াল ডিপ্লয়মেন্ট অফ সাইবার ফিজিক্যাল সিস্টেমস - শ্রী অনিন্দ্য শংকর শুক্লা", speaker: "সিনিয়র ডেটা সায়েন্টিস্ট ম্যানেজার, সিরিয়াস ডিজিটেক ইন্টারন্যাশনাল লিমিটেড (আদানি আইএইচসি যৌথ উদ্যোগ)" },
           { time: "বিকাল ৪:০০ - ৫:৩০", topic: "এ প্রেডিকশন মডেল ফর মিশিং অ্যাটাক ডিটেকশন ইউজিং এমএল - ড. দেবাশিস গিরি", speaker: "ইনফরমেশন টেকনোলজি বিভাগ, মৌলানা আবুল কালাম আজাদ প্রযুক্তি বিশ্ববিদ্যালয়" },
-          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "নাস্তা এবং চা", speaker: "" }
+          { time: "বিকাল ৫:৩০ - ৫:৪৫", topic: "অল্পাহার এবং চা", speaker: "" }
         ]
       },
       day2: {
