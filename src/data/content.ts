@@ -85,13 +85,13 @@ export const content = {
       day1: {
         title: "Day 1",
         sessions: [
-  { time: "9:15 AM - 9:45 AM", topic: "Registration and Hi Tea", speaker: "" },
+  { time: "9:15 AM - 9:45 AM", topic: "Registration and Tea", speaker: "" },
   { time: "9:45 AM - 10:00 AM", topic: "Inauguration", speaker: "" },
   { time: "10:00 AM - 11:30 AM", topic: "Challenges and Recent Solutions in Cyber Security By Dr. Sangram Ray", speaker: "Associate Professor of Computer Science and Engineering, NIT Sikkim" },
   { time: "11:45 AM - 1:15 PM", topic: "Recommendation Challenge: Apprehend the Customer Perception by Prof. Dr. Sankhayan Choudhury", speaker: "Computer Science and Engineering, CU" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
   { time: "2:15 PM - 3:45 PM", topic: "Industrial Al: Industrial Deployment of Cyber Physical Systems By Mr. Aninda Sankar Sukla", speaker: "Senior Data Scientist Manager" },
-  { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Mining Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
+  { time: "4:00 PM - 5:30 PM", topic: "A Prediction Model for Mishing Attack Detection using ML By Dr. Debasish Giri", speaker: "Department of Information Technology, Maulana Abul Kalam Azad University of Technology" },
   { time: "5:30 PM - 5:45 PM", topic: "Snacks and Tea", speaker: "" }
 ]
 
@@ -99,7 +99,7 @@ export const content = {
       day2: {
         title: "Day 2",
         sessions: [
-  { time: "9:30 AM - 10:00 AM", topic: "Hi Tea", speaker: "" },    
+  { time: "9:30 AM - 10:00 AM", topic: "Tea", speaker: "" },    
   { time: "10:00 AM - 11:30 AM", topic: "Secure Video Surveillance System By Dr. Arup Kumar Pal", speaker: "Associate Professor of Computer Science and Engineering, IIT (ISM) Dhanbad" },
   { time: "11:45 AM - 1:15 PM", topic: "Threat Intelligence and Hunting Fundamentals By Mr. Tapas Bandyopadhyay", speaker: "Technical Expert, NABL" },
   { time: "1:15 PM - 2:15 PM", topic: "Lunch Break", speaker: "" },
