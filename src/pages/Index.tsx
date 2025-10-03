@@ -12,6 +12,14 @@ import speaker2 from '@/assets/speaker-2.jpg';
 import speaker3 from '@/assets/speaker-3.jpg';
 import speaker4 from '@/assets/speaker-4.jpg';
 import { Calendar, MapPin, Users, Mail, Phone, Clock, User, Award, BookOpen, Star, Zap, Shield } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import EventGallery from './EventGallery';
+
 
 const Index = () => {
   const [language, setLanguage] = useState<'en' | 'bn'>('en');
@@ -511,6 +519,7 @@ const Index = () => {
     </div>
   </div>
 </section>
+<EventGallery />
 
 {/* Institution Description */}
 <section className="py-16 bg-background">
@@ -529,6 +538,7 @@ const Index = () => {
     </ScrollReveal>
   </div>
 </section>
+
 
 
       {/* Contact Section */}
